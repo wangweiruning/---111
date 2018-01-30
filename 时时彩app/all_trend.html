@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>江苏快三-走势</title>
+		 <meta name="viewport" content="width=device-width,initial-scale=1.0, 
+		minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Cache-Control" content="no-cache,must-revalidate" />
+    <meta http-equiv="Expires" content="0" />
+		<meta http-equiv="Access-Control-Allow-Origin" content="*">
+		<link rel="stylesheet" type="text/css" href="css/common.css" />
+		<link rel="stylesheet" type="text/css" href="css/pic_zoushi.css"/>
+		<link rel="stylesheet" href="css/data_show.css" />
+		<link rel="stylesheet" href="css/swiper.min.css" />
+		<script type="text/javascript">
+	function showD() { 
+		document.getElementById('popWindow').style.display = 'block'; 
+		document.getElementById('maskLayer').style.display = 'block'; 
+	} 
+	function closeDiv() { 
+			document.getElementById('popWindow').style.display = 'none'; 
+			document.getElementById('maskLayer').style.display = 'none'; 	
+	} 
+		</script>
+	</head>
+<body >
+
+	
+	<!--头部设置end-->
+	<!--主体部分开始-->
+		<script src="js/jquery-3.1.1.min.js"></script>
+		<script src="js/showmassage.js"></script>
+		<script type="text/javascript" src="js/all_pic.js"></script>
+<script type="text/javascript">
+$(function(){
+function GetRequest() {
+var url = location.search; //获取url中"?"符后的字串
+var theRequest = new Object();
+if (url.indexOf("?") != -1) {
+var str = url.substr(1);
+strs = str.split("&");
+for(var i = 0; i < strs.length; i ++) {
+theRequest[strs[i].split("=")[0]]=unescape(strs[i].split("=")[1]);
+}
+}
+return theRequest;
+}
+var Request = new Object();
+Request = GetRequest()
+if(Request["uid"]!=undefined){
+var uid = Request["uid"];
+}
+console.log(uid)
+
+$.ajax({
+             type: "post",
+             url: "https://www.jindi163.com:8443/JDLot/lottype/pagelist",
+             data: {"uid":uid,"PageSize":"100"},
+             async:true,
+             dataType: "json",
+             contentType:"application/json",
+             success: function(data){
+                   data=data.datas;
+                   console.log(data)
+
+                   $('#caizhongjiekou').empty();  
+                   var html="";
+                    var fuds="";
+                    var dat=new Array();
+                    var nams=new Array();
+                   $.each(data,function(i){
+                      var good_name=data[i].lottery_name;
+                      var good=good_name.substring(5);
+                          good=good+"_trend.html?uid=";//链接
+                        dat.push(good)
+
+                       var sss= data[i].lottery_full_name;
+                       nams.push(sss);
+                    
+            html+='<li><a href="'+good+uid+'">'+data[i].lottery_full_name+'</a></li>'
+                       })
+          
+downApp()
+            function downApp(){
+                       var u = navigator.userAgent;
+        var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Adr') > -1; //android终端
+        var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
+        if (isAndroid) {
+            //安卓终端使用iframe
+            var winH = $(window).height();
+            var iframe = document.createElement('iframe');
+            iframe.src =dat[0]+uid;
+            iframe.style.width = '100%';
+            iframe.style.height = winH + 'px';
+            iframe.style.border = '0 none';
+            iframe.setAttribute('scrolling', 'auto');
+            document.body.appendChild(iframe);
+            // alert(1)
+        } else if (isiOS) {
+            //iOS终端直接页面跳转
+            window.location.href = dat[0]+uid;
+        } else {
+            window.location.href =dat[0]+uid;
+        }
+    }
+                   //    $("#dsf").text(nams[0])
+                   // $('#caizhongjiekou').append(html);
+                   //  $('#caizhongjiekou li').each(function(i){
+                   //    $(this).click(function(){
+                   //      var index=i;
+                   //      $(".caipiao_leixing").empty();
+                   //       $(".caipiao_leixing").text(nams[index])
+                   //       // alert(nams[index])
+                   //    })
+                   //  })
+                 }
+
+       })
+   
+})
+	   
+</script>
+</body>
+</html>

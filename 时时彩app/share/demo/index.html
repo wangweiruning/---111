@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>		
+		<title>推广分享</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0, 
+		minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+		<meta http-equiv="Pragma" content="no-cache" />
+		<meta http-equiv="Cache-Control" content="no-cache,must-revalidate" />
+		<meta http-equiv="Expires" content="0" />
+		<link rel="stylesheet" type="text/css" href="../../css/common.css" />
+		<link rel="stylesheet" type="text/css" href="../../css/tuiguang.css"/>
+
+</head>
+<body>
+<!-- 邀请码开始 -->
+<div class="yaoqingma">
+	<div class="yaoqing">
+		 	<span style="color:#fff;background-color:orange;display: block;width:80%;margin:2rem auto;border-radius: 5px " id="clicks">一键分享</span>
+	</div>
+</div>
+<!-- 邀请码结束 -->
+<!-- 中间介绍开始 -->
+<center>
+	<div class="pic_1">
+		<img src="../../img/massage/yijie.png"/>
+		<img src="../../img/massage/pic_1.png"/>
+		<!-- <img src="../../img/massage/sanji.png"/> -->
+		<div class="huoqujifen">
+			<h2 style="text-align: center;font-size: 1rem;height:2rem;line-height: 2rem">二级模式 获积分 佣金 特容易！</h2>
+			<div style="text-align: center;font-size: 0.8rem;color:gray">
+				<h2>获取积分的方式：</h2>
+				<h3>1、签到获取积分，当您注册登陆之后，</h3>
+				<p>注册成功之后可以获取2000积分</p>
+				<p>每天签到一次就能获取一定的积分，第一天可得30积分，</p>
+				<p>第二天40积分，一次类推。</p>
+				<p>最高可连续签到一个月。之后从新开始计算。</p>
+				<p>当您中间有一次没有签到，则会重新开始。</p>
+				<h3>2、每个平台<span style="color:red">首次推广</span>获取<span style="color:red">积分</span>，</h3>
+				<p>推广到您的qq，微信等朋友圈，</p><p>每当有人下载,就能获取500积分</p>
+				<p>3、消费、充值获积分</p>
+				<p>每次消费都能够获取一定的积分</p>
+				<p>每次充值都能够获取一定的积分</p>
+				<p>积分可以代替人民币购买计划</p>
+				<h3><span style="color:red">佣金</span>获取方式：</h3>
+				<p>每当别人使用你的邀请码注册，</p>
+				<p>你就可以获取别人消费的20%作为你的佣金</p>
+				<p>二级佣金为（例）：500*30%*20%=30元</p>
+				<p>一级佣金为（例）：500*30*30%=45元</p>
+				<p>每次可获得佣金75元，按照每月30天计算，<p>
+				<p>每月可获得最低2100元</p>
+				<p>您需要做的就是通过手机一键分享就能实现</p>
+			</div>
+		</div>
+
+		<img src="../../img/massage/erjie.png"/>
+		<!--<img src="img/massage/quxiao.png"/>-->
+		<img src="../../img/massage/chixu.png"/>
+		<img src="../../img/massage/zhushou.png"/>
+		<img src="../../img/massage/win.png"/>
+	</div>
+</center>
+<!-- 中间介绍结束 -->
+<script type="text/javascript" src="../../js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript">
+	$("#clicks").click(function(){
+        var u = navigator.userAgent; 
+        isAndroid = u.indexOf('Android') > -1 || u.indexOf('Adr') > -1;
+        isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/);
+        if (isiOS==true) {
+        	// alert(12)
+        share();
+        } else {
+        	// alert(1)
+        android.shares();
+        }
+
+})
+</script>
+</body>
+</html>

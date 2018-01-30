@@ -1,0 +1,38 @@
+*{
+	margin:0;
+	padding:0;
+}
+html,body{
+	width:100%;
+	font-size: 16px;
+	margin:0 auto;
+}
+.headers{
+width:100%;
+height:4rem;
+background: red;
+text-align: center;
+margin:0 auto;
+}
+.headers h2{
+	text-align: center;
+	font-size: 2rem;
+	line-height: 4rem
+}
+.centers{
+	width:100%;
+	margin:0 auto;
+	margin-top: 2rem
+}
+.centers h3{
+   text-align: center;
+   width:100%;
+   margin:1rem auto;
+}
+.centers p{
+	width:80%;
+	line-height:2rem;
+	font-size: 1rem;
+	text-align: center;
+	margin:0 auto;
+}

@@ -1,0 +1,323 @@
+﻿{
+    "@platforms": ["android", "iPhone", "iPad"],
+    "id": "H511B1310",/*应用的标识，创建应用时自动生成，勿手动修改*/
+    "name": "时时彩111",/*应用名称，程序桌面图标名称*/
+    "version": {
+        "name": "1.0",/*应用版本名称*/
+        "code": ""
+    },
+    "description": "",/*应用描述信息*/
+    "icons": {
+        "72": "icon.png"
+    },
+    "launch_path": "时时彩app/gd115_trend.html",/*应用的入口页面，默认为根目录下的index.html；支持网络地址，必须以http://或https://开头*/
+    "developer": {
+        "name": "",/*开发者名称*/
+        "email": "",/*开发者邮箱地址*/
+        "url": ""/*开发者个人主页地址*/
+    },
+    "permissions": {
+        
+        
+        
+        "Cache": {
+            "description": "管理应用缓存"
+        },
+        
+        "Console": {
+            "description": "跟踪调试输出日志"
+        },
+        
+        
+        
+        "Events": {
+            "description": "应用扩展事件"
+        },"Device":{},"Storage":{},"Runtime":{},"NativeUI":{},"NativeObj":{},"Invocation":{},"Accelerometer":{},"XMLHttpRequest":{}
+    },
+    "plus": {
+        "splashscreen": {
+            "autoclose": true,/*是否自动关闭程序启动界面，true表示应用加载应用入口页面后自动关闭；false则需调plus.navigator.closeSplashscreen()关闭*/
+            "waiting": true/*是否在程序启动界面显示等待雪花，true表示显示，false表示不显示。*/
+        },
+        "popGesture": "close",/*设置应用默认侧滑返回关闭Webview窗口，"none"为无侧滑返回功能，"hide"为侧滑隐藏Webview窗口。参考http://ask.dcloud.net.cn/article/102*/
+        "runmode": "normal",/*应用的首次启动运行模式，可取liberate或normal，liberate模式在第一次启动时将解压应用资源（Android平台File API才可正常访问_www目录）*/
+        "signature": "Sk9JTiBVUyBtYWlsdG86aHIyMDEzQGRjbG91ZC5pbw==",/*可选，保���给应用签名，暂不使用*/
+        "distribute": {
+            "apple": {
+                "appid": "",/*iOS应用标识，苹果开发网站申请的appid，如io.dcloud.HelloH5*/
+                "mobileprovision": "",/*iOS应用打包配置文件*/
+                "password": "",/*iOS应用打包个人证书导入密码*/
+                "p12": "",/*iOS应用打包个人证书，打包配置文件关联的个人证书*/
+                "devices": "universal",/*iOS应用支持的设备类型，可取值iphone/ipad/universal*/
+                "frameworks":[
+                ]/*调用Native.js调用原生Objective-c API需要引用的FrameWork，如需调用GameCenter，则添加"GameKit.framework"*/
+            },
+            "google": {
+                "packagename": "",/*Android应用包名，如io.dcloud.HelloH5*/
+                "keystore": "",/*Android应用打包使用的密钥库文件*/
+                "password": "",/*Android应用打包使用密钥库中证书的密码*/
+                "aliasname": "",/*Android应用打包���用密钥库中证书的别名*/
+               "permissions": ["<uses-permission android:name=\"android.permission.READ_PHONE_STATE\"/>","<uses-permission android:name=\"android.permission.VIBRATE\"/>","<uses-permission android:name=\"android.permission.WAKE_LOCK\"/>","<uses-permission android:name=\"android.permission.CALL_PHONE\"/>","<uses-permission android:name=\"android.permission.ACCESS_WIFI_STATE\"/>","<uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\"/>"]
+				/*使用Native.js调用原生安卓API需要使用到的系统权限*/
+            },
+            "orientation": ["portrait-primary","landscape-primary","landscape-secondary"],/*应用支持的方向，portrait-primary：竖屏正方向；portrait-secondary：竖屏反方向；landscape-primary：横屏正方向；landscape-secondary：横屏反方向*/
+            "icons": {
+                "ios": {
+                    "prerendered": true, /*应用图标是否已经高亮处理，在iOS6及以下设备上有效*/
+                    "auto": "", /*应用图标，分辨率：512x512，用于自动生成各种尺寸程序图标*/
+                    "iphone": {
+                        "normal": "unpackage/res/icons/57x57.png", /*iPhone3/3GS程序图标，分辨率：57x57*/
+                        "retina": "unpackage/res/icons/114x114.png", /*iPhone4程序图标，分辨率：114x114*/
+                        "retina7": "unpackage/res/icons/120x120.png", /*iPhone4S/5/6程序图标，分辨率：120x120*/
+			"retina8": "unpackage/res/icons/180x180.png", /*iPhone6 Plus程序图标，分辨率：180x180*/
+                        "spotlight-normal": "unpackage/res/icons/29x29.png", /*iPhone3/3GS Spotlight搜索程序图标，分辨率：29x29*/
+                        "spotlight-retina": "unpackage/res/icons/58x58.png", /*iPhone4 Spotlight搜索程序图标，分辨率：58x58*/
+                        "spotlight-retina7": "unpackage/res/icons/80x80.png", /*iPhone4S/5/6 Spotlight搜索程序图标，分辨率：80x80*/
+                        "settings-normal": "unpackage/res/icons/29x29.png", /*iPhone4设置页面程序图标，分辨率：29x29*/
+                        "settings-retina": "unpackage/res/icons/58x58.png", /*iPhone4S/5/6设置页面程序图标，分辨率：58x58*/
+			"settings-retina8": "unpackage/res/icons/87x87.png" /*iPhone6Plus设置页面程序图标，分辨率：87x87*/
+                    },
+                    "ipad": {
+                        "normal": "unpackage/res/icons/72x72.png", /*iPad普通屏幕程序图标，分辨率：72x72*/
+                        "retina": "unpackage/res/icons/144x144.png", /*iPad高分屏程序图标，分辨率：144x144*/
+                        "normal7": "unpackage/res/icons/76x76.png", /*iPad iOS7程序图标，分辨率：76x76*/
+                        "retina7": "unpackage/res/icons/152x152.png", /*iPad iOS7高分屏程序图标，分辨率：152x152*/
+                        "spotlight-normal": "unpackage/res/icons/50x50.png", /*iPad Spotlight搜索程序图标，分辨率：50x50*/
+                        "spotlight-retina": "unpackage/res/icons/100x100.png", /*iPad高分屏Spotlight搜索程序图标，分辨率：100x100*/
+                        "spotlight-normal7": "unpackage/res/icons/40x40.png",/*iPad iOS7 Spotlight搜索程序图标，分辨率：40x40*/
+                        "spotlight-retina7": "unpackage/res/icons/80x80.png",/*iPad iOS7高分屏Spotlight搜索程序图标，分辨率：80x80*/
+                        "settings-normal": "unpackage/res/icons/29x29.png",/*iPad设置页面程序图标，分辨率：29x29*/
+                        "settings-retina": "unpackage/res/icons/58x58.png" /*iPad高分屏设置页面程序图标，分辨率：58x58*/
+                    }
+                },
+                "android": {
+                    "mdpi": "unpackage/res/icons/48x48.png", /*普通屏程序图标，分辨率：48x48*/
+                    "ldpi": "unpackage/res/icons/48x48.png", /*大屏程序图标，分辨率：48x48*/
+                    "hdpi": "unpackage/res/icons/72x72.png", /*高分屏程序图标，分辨率：72x72*/
+                    "xhdpi": "unpackage/res/icons/96x96.png",/*720P高分屏程序图标，分辨率：96x96*/
+                    "xxhdpi": "unpackage/res/icons/144x144.png","xxxhdpi":"unpackage/res/icons/192x192.png"/*1080P 高分屏程序图标，分辨率：144x144*/
+                }
+            },
+            "splashscreen": {
+                "ios": {
+                    "iphone": {
+                        "default": "", /*iPhone3启动图片选，分辨率：320x480*/
+                        "retina35": "",/*3.5英寸设备(iPhone4)启动图片，分辨率：640x960*/
+                        "retina40": "",/*4.0 英寸设备(iPhone5/iPhone5s)启动图片，分辨率：640x1136*/
+                        "retina47": "",/*4.7 英寸设备(iPhone6)启动图片，分辨率：750x1334*/
+                        "retina55": "",/*5.5 英寸设备(iPhone6 Plus)启动图片，分辨率：1242x2208*/
+                        "retina55l": ""/*5.5 英寸设备(iPhone6 Plus)横屏启动图片，分辨率：2208x1242*/
+                    },
+                    "ipad": {
+                        "portrait": "", /*iPad竖屏启动图片，分辨率：768x1004*/
+                        "portrait-retina": "",/*iPad高分屏竖屏图片，分辨率：1536x2008*/
+                        "landscape": "", /*iPad横屏启动图片，分辨率：1024x748*/
+                        "landscape-retina": "", /*iPad高分屏横屏启动图片，分辨率：2048x1496*/
+                        "portrait7": "", /*iPad iOS7竖屏启动图��，分辨率：768x1024*/
+                        "portrait-retina7": "",/*iPad iOS7高分屏竖屏图片，分辨率：1536x2048*/
+                        "landscape7": "", /*iPad iOS7横屏启动图片，分辨率：1024x768*/
+                        "landscape-retina7": ""/*iPad iOS7高分屏横屏启动图片，分辨率：2048x1536*/
+                    }
+                },
+                "android": {
+                    "mdpi": "", /*普通屏启动图片，分辨率：240x282*/
+                    "ldpi": "", /*大屏启动图片，分辨率：320x442*/
+                    "hdpi": "C:/Users/123/Desktop/必中ssc/img/7.png", /*高分屏启动图片，分辨率：480x762*/
+                    "xhdpi": "C:/Users/123/Desktop/必中ssc/img/6.png", /*720P高分屏启动图片，分辨率：720x1242*/
+                    "xxhdpi": "C:/Users/123/Desktop/必中ssc/img/5.png"/*1080P高分屏启动图片，分辨率：1080x1882*/
+                }
+            },"debug":true
+        }
+    },"fullscreen":false,
+	"dependencies":{
+		"pages": {
+			"时时彩app/zhuihao_15_help.html": {
+				"href": "时时彩app/zhuihao_15_help.html",
+				"resources": [
+					"时时彩app/css/common.css",
+					"时时彩app/css/helps.css",
+					"时时彩app/img/common/arrow3x.png"
+				],
+				"priority": 0
+			},
+			"时时彩app/gd115_kline.html": {
+				"href": "时时彩app/gd115_kline.html",
+				"resources": [
+					"时时彩app/css/last.css",
+					"时时彩app/js/jquery-3.1.1.min.js",
+					"时时彩app/js/echarts.min.js",
+					"时时彩app/img/back.png"
+				],
+				"priority": 1
+			},
+			"时时彩app/gd115_trend.html": {
+				"href": "时时彩app/gd115_trend.html",
+				"resources": [
+					"时时彩app/css/common.css",
+					"时时彩app/css/pic_zoushi.css",
+					"时时彩app/img/common/arrow3x.png",
+					"时时彩app/img/massage/design3x.png",
+					"时时彩app/img/massage/juxing-3@2x.png",
+					"时时彩app/img/massage/bg_cos.png",
+					"时时彩app/css/data_show.css",
+					"时时彩app/css/swiper.min.css",
+					"时时彩app/js/jquery-3.1.1.min.js",
+					"时时彩app/js/showmassage.js",
+					"时时彩app/js/all_pic.js",
+					"时时彩app/js/zepto.min.js",
+					"时时彩app/js/idangerous.swiper.min.js",
+					"时时彩app/js/change_gd115.js",
+					"时时彩app/js/gd115.js",
+					"时时彩app/img/massage/help3x.png"
+				],
+				"refer": [
+					"时时彩app/zhuihao_15_help.html",
+					"时时彩app/gd115_kline.html"
+				],
+				"priority": 0
+			}
+		},
+		"idle": {
+			"resources": [
+				"时时彩app/k_line.html",
+				"时时彩app/img/use/Screenshot_2017-10-17-11-12-42.png",
+				"时时彩app/img/massage/pic_1.png",
+				"时时彩app/js/changes_gzks.js",
+				"时时彩app/tjssc_trend.html",
+				"时时彩app/img/gray_help.png",
+				"时时彩app/css/guide.css",
+				"时时彩app/img/massage/sanjimoshi.png",
+				"时时彩app/img/massage/sanji.png",
+				"时时彩app/img/common/nonetwork.png",
+				"时时彩app/cqssc_trend.html",
+				"时时彩app/js/changes_tjssc.js",
+				"时时彩app/jsks_trend.html",
+				"时时彩app/img/massage/up3x.png",
+				"时时彩app/depk10_trend.html",
+				"时时彩app/img/use/Screenshot_2017-10-17-13-57-30.png",
+				"时时彩app/xyftpk10_trend.html",
+				"时时彩app/img/massage/sanji_11.png",
+				"时时彩app/img/use/Screenshot_2017-10-17-11-10-35.png",
+				"时时彩app/img/use/Screenshot_2017-10-17-14-07-57.png",
+				"时时彩app/img/use/four.png",
+				"时时彩app/img/use/Screenshot_2017-10-17-14-39-32.png",
+				"时时彩app/gzks_trend.html",
+				"时时彩app/pk10_kline.html",
+				"时时彩app/gsks_trend.html",
+				"时时彩app/img/massage/qq.png",
+				"时时彩app/js/change_gsks.js",
+				"时时彩app/js/clipboard.js",
+				"时时彩app/tjssc_kline.html",
+				"时时彩app/img/massage/rands3x.png",
+				"时时彩app/xyft_kline.html",
+				"时时彩app/css/swiper-3.4.2.min.css",
+				"时时彩app/massage_cqshishicai.html",
+				"时时彩app/img/massage/right3x.png",
+				"时时彩app/jxks_trend.html",
+				"时时彩app/js/change_sd115.js",
+				"时时彩app/img/massage/unloading.png",
+				"时时彩app/img/use/Screenshot_2017-10-17-14-49-42.png",
+				"时时彩app/nmgks_trend.html",
+				"时时彩app/img/use/Screenshot_2017-10-17-13-43-18.png",
+				"时时彩app/bjpk10.html",
+				"时时彩app/img/use/Screenshot_2017-10-17-11-10-19.png",
+				"时时彩app/img/use/Screenshot_2017-10-17-14-31-22.png",
+				"时时彩app/use_guide.html",
+				"时时彩app/img/use/Screenshot_2017-10-17-14-08-07.png",
+				"时时彩app/img/use/Screenshot_2017-10-17-11-09-27.png",
+				"时时彩app/img/use/Screenshot_2017-10-17-11-10-51.png",
+				"时时彩app/img/massage/4c3ba25d7384dee10d565e7f20c89400_t014be238bb089e1e42.gif",
+				"时时彩app/js/feiting.js",
+				"时时彩app/img/massage/yijie.png",
+				"时时彩app/img/use/Screenshot_2017-10-17-13-48-50.png",
+				"时时彩app/jsks_finds.html",
+				"时时彩app/img/massage/weibo.png",
+				"时时彩app/xjssc_trend.html",
+				"时时彩app/img/massage/zhushou.png",
+				"时时彩app/js/swiper-3.4.2.min.js",
+				"时时彩app/js/sd1155.js",
+				"时时彩app/css/tuiguang.css",
+				"时时彩app/zhuihao_10_help.html",
+				"时时彩app/jifen_massage.html",
+				"时时彩app/js/huadong.js",
+				"时时彩app/img/massage/down.png",
+				"时时彩app/img/use/Screenshot_2017-10-17-11-11-19.png",
+				"时时彩app/js/all.js",
+				"时时彩app/xjssc_kline.html",
+				"时时彩app/img/use/Screenshot_2017-10-17-11-13-36.png",
+				"时时彩app/img/use/Screenshot_2017-10-17-14-28-05.png",
+				"时时彩app/img/common/rm_normal.png",
+				"时时彩app/img/massage/weixin.png",
+				"时时彩app/img/massage/yaoqingimg.png",
+				"时时彩app/zhuihao_ks_help.html",
+				"时时彩app/all_trend.html",
+				"时时彩app/img/massage/erjie.png",
+				"时时彩app/js/data_refish.js",
+				"时时彩app/js/changes_jlks.js",
+				"时时彩app/share/demo/index.html",
+				"时时彩app/zhuihao_sc_help.html",
+				"时时彩app/js/changes_gxks.js",
+				"时时彩app/img/massage/error3x.png",
+				"时时彩app/ahks_trend.html",
+				"时时彩app/img/use/Screenshot_2017-10-17-11-12-25.png",
+				"时时彩app/js/jquery-2.0.3.js",
+				"时时彩app/sd115_trend.html",
+				"时时彩app/js/changes_hbks.js",
+				"时时彩app/img/massage/unchecked3x.png",
+				"时时彩app/sd115_kline.html",
+				"时时彩app/img/use/sex.png",
+				"时时彩app/gxks_trend.html",
+				"时时彩app/js/tjssc.js",
+				"时时彩app/img/use/Screenshot_2017-10-17-11-09-45.png",
+				"时时彩app/js/depk10.js",
+				"时时彩app/depk10_kline.html",
+				"时时彩app/img/use/Screenshot_2017-10-17-14-28-22.png",
+				"时时彩app/js/qiehuan.js",
+				"时时彩app/bjpk10_line.html",
+				"时时彩app/img/use/Screenshot_2017-10-17-11-13-22.png",
+				"时时彩app/manifest.json",
+				"时时彩app/css/PK10.css",
+				"时时彩app/js/zoom.js",
+				"时时彩app/img/massage/back.png",
+				"时时彩app/img/use/Screenshot_2017-10-17-13-43-59.png",
+				"时时彩app/new_file.json",
+				"时时彩app/img/use/five.png",
+				"时时彩app/js/bjpk10.js",
+				"时时彩app/pk10_trend.html",
+				"时时彩app/img/massage/go.png",
+				"时时彩app/massage_help.html",
+				"时时彩app/jsks_find.html",
+				"时时彩app/js/clipboard.min.js",
+				"时时彩app/js/change_feiting.js",
+				"时时彩app/img/shezhi.png",
+				"时时彩app/css/zoom.css",
+				"时时彩app/img/massage/nonetwork.png",
+				"时时彩app/img/common/rm_select.png",
+				"时时彩app/massage_pk.html",
+				"时时彩app/css/jifen.css",
+				"时时彩app/js/changes_ahks.js",
+				"时时彩app/js/changes_cqssc.js",
+				"时时彩app/img/massage/checked3x.png",
+				"时时彩app/js/echarts.js",
+				"时时彩app/img/massage/win.png",
+				"时时彩app/img/massage/chixu.png",
+				"时时彩app/hbks_trend.html",
+				"时时彩app/css/qiehuan.css",
+				"时时彩app/js/changges_ks.js",
+				"时时彩app/img/massage/bg_red.png",
+				"时时彩app/js/ass.js",
+				"时时彩app/js/pllan_huadong.js",
+				"时时彩app/jlks_trend.html",
+				"时时彩app/js/xjssc.js",
+				"时时彩app/qhks_trend.html",
+				"时时彩app/img/massage/friends.png",
+				"时时彩app/img/massage/bg_small.png",
+				"时时彩app/js/change_depk10.js",
+				"时时彩app/css/zoushitu.css",
+				"时时彩app/css/shishicai_zhuihao.css",
+				"时时彩app/js/changes_bjpk10.js",
+				"时时彩app/js/changes_xjssc.js"
+			]
+		}
+	}
+}

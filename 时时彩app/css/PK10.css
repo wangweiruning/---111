@@ -1,0 +1,31 @@
+/*统计部分*/
+.data_fenxi{
+	width:100%;
+	height:8.5rem;
+	position: fixed;
+	bottom:0;
+	display: none;
+}
+.data_fenxi li{
+width:100%;
+height:2rem;
+border:2px solid #E2E2DE;
+border-bottom: none;
+}
+.data_fenxi li ol{
+	width:100%;
+	height:100%;
+}
+.data_fenxi li ol li{
+	width:7.2%;
+	height:100%;
+	float: left;
+	border-top: none;
+	border-bottom: none;
+	border-left: none;
+	line-height: 2rem;
+	font-size:0.5rem;
+}
+.data_fenxi li ol li.fist{
+	width:20.6%;
+}

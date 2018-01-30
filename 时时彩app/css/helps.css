@@ -1,0 +1,167 @@
+/*信息提示部分css代码开始*/
+
+*{
+	margin:0;
+	padding:0;
+}
+p{
+	text-align: left;
+	width:80%;
+	margin:0 auto;
+	text-indent: 2rem;
+}
+.headers{
+	width:100%;
+	height:3rem;
+	background:#f00;
+	position:fixed;
+	top:0;
+	z-index: 3;
+	/*background:-webkit-linear-gradient(left,red 40%,orange 80%,#00f);*/
+}
+.tops{
+	width:100%;
+	height:100%;
+	margin:0 auto;
+}
+.tops span{
+	display: inline-block;
+	padding:0rem 1rem;
+	float: left;
+}
+.tops span img{
+	padding-top:.6rem;
+	width:1rem;
+	height:auto;
+}
+.tops span.helps{
+	width: 70%;
+	height:100%;
+	font-size:1rem;
+	font-weight: bold;
+	line-height: 3rem;
+	text-align: center;
+	background:-webkit-linear-gradient(left,#fc0,#fff 25%,#0f0 40%,#0ff 55%,#00f 70%,#f00);/*文字出现渐变色*/
+    -webkit-background-clip:text;/*只有webkit内核支持text的剪切模式*/
+  	color:transparent;
+}
+
+.centers{
+	width:100%;
+	padding: 4rem 0;
+}
+.centers .cen_main{
+	width:80%;
+	height: 100%;
+	margin:0 auto;
+	font-size: .8rem;
+}
+.centers .cen_main .zhuyao{
+	text-align: left;
+	float: left;
+	font-family: "微软雅黑";
+	font-size: .8rem;
+	line-height: 2rem;
+	
+}
+/*信息提示部分css代码结束*/
+.play_way{
+	
+	padding-bottom:1rem ;
+}
+.play_way p{
+	color:gray;
+	font-size: .5rem;
+	line-height: 1rem;
+}
+.zhongjiang table tr{
+width:100%;
+border:1px solid gray;
+text-align: center;
+}
+.zhongjiang table tr th,.zhongjiang table tr td{
+border:1px solid gray;
+width:33%;
+}
+.zhongjiang table tr td p{
+	color:#000;
+}
+.zhongjiang table tr td span{
+	color:red;
+}
+.kaijiang{
+	margin-top:1rem;
+}
+.bolid{
+	font-weight: bold;
+	padding-top: 1rem;
+	color:#f7f;
+}
+
+
+
+/*时时彩追号计划*/
+.ssc_massage{
+	width:100%;
+	position: relative;
+	top:3rem;
+	height:50%;
+	/*background:#e3d;*/
+	text-align: center;
+	padding:2rem 0;
+}
+
+/*江苏快三追号计划*/
+.jsks_massage{
+	width:100%;
+	height:100%;
+	/*background-color: gray;*/
+	text-align: center;
+	position: relative;
+	top:3rem;
+	padding:2rem 0;
+}
+
+
+
+/*pk10追号计划*/
+.pk_massage{
+		width:80%;
+	height:100%;
+	/*background-color: gray;*/
+	text-align: left;
+	position: relative;
+	margin:0 auto;
+	top:3rem;
+	padding:2rem 0;
+}
+h3,h4{
+	color:orangered
+}
+.changes{
+	color:gray;
+    font-size: 0.5rem;
+    line-height: 2rem;
+    text-indent: 1.6rem;
+}
+.pk_massage p{
+   text-indent: 1.5rem;
+}
+.jsks_footer,.foot_massage,.pk_footer{
+	width:100%;
+	height:3rem;
+	line-height: 3rem;
+	font-size: 1rem;
+	background:red;
+	text-align: center;
+	position:fixed;
+	bottom:0;
+	background: red;
+}
+.jsks_footer p,.foot_massage p,.pk_footer p{
+	line-height: 3rem;
+	font-weight: bolder;
+	background:-webkit-linear-gradient(left,#fc0,#fff 25%,#0f0 40%,#0ff 55%,#00f 70%,#f00);/*文字出现渐变色*/
+    -webkit-background-clip:text;/*只有webkit内核支持text的剪切模式*/
+  	color:transparent;
+}

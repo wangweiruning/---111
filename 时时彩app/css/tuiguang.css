@@ -1,0 +1,197 @@
+.header{
+	width:100%;
+	height:3rem;
+	background:#fff;
+}
+.header .pic_set{
+	width:100%;
+	height:100%;
+	background:#fff;
+}
+.back{
+	width:20%;
+	height:100%;
+	float: left;
+	display:inline-block; 
+}
+.back .back_pre{
+	width:100%;
+	height:100%;
+	display:inline-block; 
+	background:url(../img/massage/back.png)no-repeat center center;
+}
+.tuisong{
+	width:55%;
+	height:100%;
+	float: left;
+	display:inline-block;
+}
+.tuisong .hh1{
+	width:100%;
+	height:100%;
+	font-size: 1.5rem;
+	line-height:3rem;
+	font-weight: bold;
+	text-align: center;
+	display:inline-block;
+}
+.wanshan{
+	width:20%;
+	height:100%;
+
+	display:inline-block;
+}
+.wanshan .massage{
+	display: inline-block;
+	width:100%;
+	height:100%;
+	color:#000;	
+	font-size: 2rem;
+	line-height:3rem;
+	font-size: 1rem;
+	font-weight: bold;
+}
+
+.yaoqingma{
+	width:100%;
+	height:10rem;
+	background:url(../img/massage/bg_red.png)no-repeat;	
+	background-size: 100% 100%;
+	position: relative;
+}
+
+.yaoqing{
+	width:50%;
+	height:50%;
+	position:absolute;
+	top:0;
+	left:0;right:0;bottom:0;margin:auto;
+	background:url(../img/massage/yaoqingimg.png)no-repeat;
+	background-size: 100% 100%;	
+}
+.yaoqing .bg_yao{
+	position: absolute;
+	width:100%;
+	height:2rem;
+	top:2rem;
+    color:#fff;
+	text-align:center;
+}
+.yaoqing #biao1{
+	width:80%;
+	height:1.3rem;
+	position:absolute;
+	top:4rem;
+	text-align: center;
+	left:8%;
+	border-radius: 10px;
+	background-color: #fff;
+	-moz-box-shadow: inset 0 3px 8px rgba(0,0,0,.8);
+    -webkit-box-shadow: inset 0 3px 8px rgba(0,0,0,.8);
+    box-shadow: inset 0 3px 8px rgba(0,0,0,.8); 
+}
+.fuzhi{
+	color:#fff;
+	position: absolute;
+	width:80%;
+	height:1.1rem;
+	line-height: 1rem;
+	font-size: 0.4rem;
+	bottom: 2.4rem;
+	border:orange;
+	left: 10%
+}
+.go_yaoqing{
+	position: absolute;
+	bottom: 5%;
+	width:90%;
+	height:1.5rem;
+	left: 5%;
+}
+.go_yaoqing span{
+	display: inline-block;
+	width:50%;
+	height:100%;
+	line-height: 1.5rem;
+	font-size: 0.5rem;
+	color:#000;
+	position: absolute;
+	bottom: 0;
+	left: 0
+}
+.go_yaoqing a{
+    display: inline-block;
+    width:20%;
+    height:100%;
+    position: absolute;
+    right:0;
+    bottom: 0;
+}
+.go_yaoqing a img{
+	width:40%;
+	height:50%;
+}
+center{
+	width:100%;
+	height:auto;
+}
+.pic_1{
+	width:100%;
+	height:100%;
+}
+.pic_1 img{
+vertical-align: top;
+width:100%;
+}
+
+.meng{
+	width:100%;
+	height:100%;
+	background:url(../img/massage/juxing-3@2x.png) no-repeat;
+	background-size: cover;
+	position: relative;
+	top:0;position: fixed;
+	display: none;
+}
+.meng ul{
+	position: fixed;
+	bottom:0;
+	width:100%;
+	height:6.5rem;
+	list-style: none;
+	background-color: #fff;
+}
+.meng ul li{
+	float: left;
+	width:25%;
+	height:100%;
+	color:#888888;
+	background-color: #fff
+}
+.meng ul li a{
+	display: inline-block;
+	width:100%;
+	height:100%;
+	color:#888;
+	background:none;
+	padding:0;
+}
+.meng ul li a img{
+	margin-top:0.5rem;
+	width:38%;
+	height:30%;
+}
+.meng ul li a p{
+	font-size: 0.8rem;
+
+}
+.guanbi{
+width:100%;
+height:2rem;
+border-top:1px solid #EEEEEE;
+line-height: 2rem;
+text-align: center;
+color:#888888;
+position: absolute;
+bottom: 0
+}

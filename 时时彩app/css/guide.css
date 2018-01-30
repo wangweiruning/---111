@@ -1,0 +1,60 @@
+body{
+	background-color:#f0f0f0;
+}
+#tops{
+	position: fixed;
+	top: 0;
+	width:100%;
+	height:auto;
+	margin:0 auto;
+}
+.guide_lis{
+	width:100%;
+	list-style: none;
+	padding-top: 1rem;
+	background-color: #fff;
+}
+.guide_lis li{
+	float:left;
+	width:20%;
+	height:2rem;
+	line-height: 2rem;
+	margin:1rem 2%;
+	margin-top: 0;
+	background-color: green;
+	color:#fff;
+	font-size: 0.8rem;
+	/*border:1px solid red;*/
+	border-radius: 5px;
+}
+.guide_lis li.liclick{
+	background-color: red
+}
+.use_guides{
+	margin-top:12rem;
+	width:100%;
+}
+.guide{
+	width:100%;
+	margin:0 auto;
+}
+.guide li{
+	width:100%;
+	height:auto;
+	background: #fff;
+	display: none;
+}
+.guide li p{
+	width:90%;
+	font-size: 1rem;
+	margin:0 auto;
+	text-indent: 2rem;
+	text-align: left;
+}
+ .container {
+      margin: 0 auto;
+      width:80%;
+    }
+    .container img {
+      width: 100%;
+    }

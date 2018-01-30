@@ -1,0 +1,45 @@
+{
+  "ööiapp/zhuihao_15_help.html": {
+    "href": "ööiapp/zhuihao_15_help.html",
+    "resources": [
+      "ööiapp/css/common.css",
+      "ööiapp/css/helps.css",
+      "ööiapp/img/common/arrow3x.png"
+    ],
+    "refer": [],
+    "priority": 0
+  },
+  "ööiapp/gd115_kline.html": {
+    "href": "ööiapp/gd115_kline.html",
+    "resources": [
+      "ööiapp/css/last.css",
+      "ööiapp/js/jquery-3.1.1.min.js",
+      "ööiapp/js/echarts.min.js",
+      "ööiapp/img/back.png"
+    ],
+    "refer": [],
+    "priority": 0
+  },
+  "ööiapp/gd115_trend.html": {
+    "href": "ööiapp/gd115_trend.html",
+    "resources": [
+      "ööiapp/css/common.css",
+      "ööiapp/css/pic_zoushi.css",
+      "ööiapp/css/data_show.css",
+      "ööiapp/css/swiper.min.css",
+      "ööiapp/js/jquery-3.1.1.min.js",
+      "ööiapp/js/showmassage.js",
+      "ööiapp/js/all_pic.js",
+      "ööiapp/js/zepto.min.js",
+      "ööiapp/js/idangerous.swiper.min.js",
+      "ööiapp/js/change_gd115.js",
+      "ööiapp/js/gd115.js",
+      "ööiapp/img/massage/help3x.png"
+    ],
+    "refer": [
+      "ööiapp/zhuihao_15_help.html",
+      "ööiapp/gd115_kline.html"
+    ],
+    "priority": 0
+  }
+}

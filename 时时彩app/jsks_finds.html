@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>江苏快三-追号计划</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0, 
+		minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+		<meta http-equiv="Pragma" content="no-cache" />
+		<meta http-equiv="Cache-Control" content="no-cache,must-revalidate" />
+		<meta http-equiv="Expires" content="0" />
+		<link rel="stylesheet" type="text/css" href="css/common.css" />
+		<link rel="stylesheet" type="text/css" href="css/qiehuan.css"/>
+		<link rel="stylesheet" type="text/css" href="css/shishicai_zhuihao.css"/>
+</head>
+<body>
+		<!--头部设置begin-->
+<div id="pic_top">
+		<div class="pic_set">
+			<!--彩种设置-->
+			<div class="caizhong">
+				<div id="caizhong_mian">
+					<span class="caipiao_leixing"></span><span class="sanjiao"></span><span class="daosanjiao"></span>
+				</div>
+			</div>
+			<!--彩种设置-->
+			<!--设置提示信息-->
+			<div class="set_massage">
+			</div>
+			<!--设置提示信息-->
+		</div> 
+		<!-- 彩种列表 -->
+		<div id="caizhong_shu">
+				<ul id="caizhongjiekou"></ul>
+		</div>
+		<!-- 彩种列表 -->
+</div>	
+	<!--头部设置end-->
+	<div class="carousel_img" style="width:80%"><!-- 计划详情 -->
+	   	<!-- <div class="car_img" style="width:50%"></div> -->
+	   	<div class="mian_body"><span id="mian_body"></span><span class="sanjiao"></span><span class="daosanjiao"></span></div>
+	   >
+    </div>
+	<div class="liebiao">
+	   		<ul id="all_list"></ul>
+	   	</div>
+    <div class="wrap" id="wrap">
+            <ul class="tabClick"><!-- 计划ABCD -->     
+            </ul>        
+    </div>
+<div class="mains_data">
+<!-- 下拉刷新部分开始 -->
+		<div id="content"> 
+		        <div id="slideDown"> 
+		            <ul id="dingwei_jihua"></ul>
+		        </div>     
+		</div> 
+<!-- 下拉刷新结束 -->
+<!-- 底部显示部分开始 -->
+		<div class="all_shows">
+			<span class="success jing0">成功统计率</span>
+			<span class="jing1 jing">近100个:<i class="ccs1"></i></span>
+			<span class="jing2 jing">近20个:<i class="ccs2"></i></span>
+		</div>
+		<!-- 底部显示结束 -->
+</div>
+    <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/clipboard.min.js"></script>
+	<script type="text/javascript" charset="UTF-8" src="js/all.js"></script>
+	<script src="js/showmassage.js"></script>
+<!--     <script type="text/javascript" src="js/huadong.js"></script> -->
+<script>
+$(function(){
+//复制粘贴功能
+			 var clipboard = new Clipboard('#cilicks', {
+			        target: function(e) {
+			        	alert("复制成功!")
+			            return document.querySelector('#first_lis p');
+			        }
+			    });
+			    clipboard.on('success', function(e) {
+			        console.log(1)
+			    });
+			    clipboard.on('error', function(e) {
+			       console.log(2)
+			    });
+
+})
+</script>
+
+
+</body>
+</html>var oP = document.querySelectorAll('p');
+oP[0].innerHTML = oP[0].innerHTML.replace(/(\d+)/g,'$1'.fontcolor("red"));
